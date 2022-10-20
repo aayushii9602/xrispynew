@@ -1,0 +1,20 @@
+.home {
+    .banner {
+        background: linear-gradient(#550259, #060606);
+        background-repeat: no-repeat;
+        background-position: left;
+        min-height: 100vh;
+    }
+
+    .section-2{
+        background-color: black;
+        
+        .product-div{
+            background-color: rgba($color: #ec08f8, $alpha: 0.15);
+            -webkit-box-shadow: 0 0 20px 0 rgba($color: #ec08f8, $alpha: 0.6);
+            -moz-box-shadow: 0 0 20px 0 rgba($color: #ec08f8, $alpha: 0.6);
+            box-shadow: 0 0 10px 0 rgba($color: #ec08f8, $alpha: 0.6);
+        }
+    }
+
+}

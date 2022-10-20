@@ -1,0 +1,18 @@
+{
+  "name": "catalyst-outlet-manager",
+  "version": "1.0.0",
+  "description": "outlet management application for organization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "react"
+  ],
+  "author": "priyansh",
+  "license": "ISC",
+  "dependencies": {
+    "@headlessui/react": "^1.7.3"
+  }
+}

@@ -1,0 +1,16 @@
+.navbar {
+    z-index: 2000;
+    position: fixed !important;
+    width: 100%;
+    height: auto;
+    top: 0;
+    background: rgba($color: #000, $alpha: 0.1);
+    -webkit-box-shadow: 0 0 20px 0 rgba(1, 16, 48, 0.75);
+    -moz-box-shadow: 0 0 20px 0 rgba(1, 16, 48, 0.75);
+    box-shadow: 0 0 20px 0 rgba(1, 16, 48, 0.9);
+
+    .navbar-mob {
+        background-color: rgba($color: #012068, $alpha: 0.5);
+    }
+
+}
