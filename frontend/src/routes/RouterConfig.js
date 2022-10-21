@@ -1,6 +1,6 @@
 export const ROUTES = {
   Home: '/',
   About: '/about',
-  UserMenu: '/UserMenu',
+  // UserMenu: '/UserMenu',
   User: '/User',
 }

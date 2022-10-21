@@ -1,182 +1,197 @@
-.UserMenu {
-  .base {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-  .UserMenu {
-    margin-top: 20px;
-    margin: 20px;
-    background: #f5f5f5;
-    max-width: 360px;
-    margin-left: 50px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 16px;
-    background-color: #eef1ff;
-    margin-bottom: 20px;
-    max-height: 100vh;
+.base1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.UserMenu1 {
+  margin-top: 20px;
+  margin: 20px;
+  background: #f5f5f5;
+  max-width: 360px;
+  margin-left: 50px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 16px;
+  background-color: #eef1ff;
+  margin-bottom: 20px;
+
+  .itemsInMenu1 {
+    max-height: 80vh;
     overflow: scroll;
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
-  .Title {
-    padding-bottom: 9px;
-    padding-top: 9px;
-    margin-left: 150px;
+}
+.Title1 {
+  padding-bottom: 9px;
+  padding-top: 9px;
+  margin-left: 150px;
+  position: sticky;
+}
+.Navbar1 {
+  display: flex;
+  position: sticky;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  background: #b1b2ff;
+  border-radius: 0px;
+  width: 360px;
+  height: 39px;
+  margin-right: 17px;
+}
+.sort1 {
+  display: flex;
+  background: #eef1ff;
+  border: 1px solid #eef1ff;
+  border-radius: 5px;
+  width: 74px;
+  margin-left: 15px;
+  height: 3.3vh;
+  padding: 0px 4px;
+  .SortBy1 {
+    margin-left: 7px;
   }
-  .Navbar {
-    display: flex;
-    position: relative;
-    padding-bottom: 9px;
-    padding-top: 9px;
-    background: #b1b2ff;
-    border-radius: 0px;
-    width: 360px;
-    height: 39px;
-    margin-right: 17px;
+  .Drop1 {
+    margin-bottom: 10px;
   }
-  .sort {
-    display: flex;
-    background: #eef1ff;
-    border: 1px solid #eef1ff;
-    border-radius: 5px;
-    width: 74px;
-    margin-left: 15px;
-    height: 3.3vh;
-    padding: 0px 4px;
-    .SortBy {
-      margin-left: 7px;
-    }
-    .Drop {
-      margin-bottom: 10px;
-    }
-    .dropDown {
-      height: 7px;
-      width: 7px;
-      margin-top: 20px;
-      color: black;
-    }
+  .dropDown1 {
+    height: 7px;
+    width: 7px;
+    margin-top: 20px;
+    color: black;
   }
-  .searchText {
-    position: absolute;
-    vertical-align: middle;
-    background: #eef1ff;
-    border: 1px solid #eef1ff;
-    border-radius: 5px;
-    padding-right: 40px;
-    padding-left: 2px;
-    width: 119px;
-    margin-left: 224px;
-  }
+}
+.searchText1 {
+  position: absolute;
+  vertical-align: middle;
+  background: #eef1ff;
+  border: 1px solid #eef1ff;
+  border-radius: 5px;
+  padding-right: 40px;
+  padding-left: 2px;
+  width: 119px;
+  margin-left: 224px;
+}
 
-  .offer {
-    margin-left: 20px;
-    margin-top: 19px;
-    margin-bottom: 18px;
-    width: 323px;
-    height: 75px;
-    background: #eeeeee;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    //   background-color: #f5f5f5;
-    .nameAndStars {
-      display: flex;
-      .shopName {
-        margin-left: 10px;
-        margin-top: 3px;
-      }
-      .Stars {
-        margin-left: 154px;
-        margin-top: 3px;
-        font-size: larger;
-      }
-    }
-
-    .contactAndBtn {
-      display: flex;
+.offer1 {
+  margin-left: 20px;
+  margin-top: 19px;
+  margin-bottom: 18px;
+  width: 323px;
+  height: 75px;
+  background: #eeeeee;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  .nameAndStars1 {
+    display: flex;
+    .shopName1 {
       margin-left: 10px;
+      margin-top: 3px;
+    }
+    .Stars1 {
+      margin-left: 154px;
+      margin-top: 3px;
+      font-size: larger;
+    }
+  }
+
+  .contactAndBtn1 {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    .todaysSpecial1 {
+      position: relative;
+      margin-left: 150px;
       margin-top: 10px;
-      .todaysSpecial {
-        position: relative;
-        margin-left: 150px;
-        margin-top: 10px;
-        background: #b1b2ff;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.17);
-        padding: 0px 4px;
-        border-radius: 5px;
+      background: #b1b2ff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.17);
+      padding: 0px 4px;
+      border-radius: 5px;
+    }
+  }
+}
+.items1 {
+  .imgAndName1 {
+    display: flex;
+  }
+
+  margin-left: 20px;
+  margin-bottom: 23px;
+
+  .itemDetails1 {
+    font-size: medium;
+    margin-left: 15px;
+    margin-right: 17px;
+    width: 190px;
+    .itemName1 {
+      font-weight: 600;
+    }
+  }
+  .descriptionPrice1 {
+    margin-top: 8px;
+    display: flex;
+    font-size: small;
+    .description1 {
+      margin-right: 20px;
+      .readmore1 {
+        font-weight: bold;
+      }
+    }
+    .price1 {
+      margin-left: 26px;
+      display: flex;
+      img {
+        width: 15px;
+        height: 15px;
       }
     }
   }
-  .items {
-    .imgAndName {
-      display: flex;
-    }
-
+}
+.Footer1 {
+  position: fixed;
+  left: 30;
+  bottom: 0;
+  width: 360px;
+  height: 40px;
+  background: #b1b2ff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  .text1 {
     margin-left: 20px;
-    margin-bottom: 23px;
-
-    .itemName {
-      font-size: medium;
-      margin-left: 15px;
-      margin-right: 17px;
-      width: 190px;
-    }
-    .descriptionPrice {
-      margin-top: 8px;
-      display: flex;
-      font-size: small;
-      .description {
-        margin-right: 20px;
-      }
-      .price {
-        margin-left: 26px;
-      }
-    }
+    font-size: 12px;
   }
-  .Footer {
-    width: 360px;
-    height: 40px;
-    background: #b1b2ff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 5px 5px 5px 5px;
-    color: white;
-    .text {
-      margin-left: 20px;
-      font-size: 12px;
-    }
-    #Progress_Status {
-      width: 56%;
-      margin-left: 20px;
-      background-color: white;
-    }
-
-    #myprogressBar {
-      width: 1%;
-      height: 4px;
-      margin-bottom: 9px;
-      text-align: center;
-      color: black;
-    }
-  }
-  .images {
-    height: 90px;
-    width: 88px;
-    border-radius: 5px;
-  }
-  .vegNonVeg {
-    width: 11px;
-    height: 11px;
-    margin-left: 6px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+  #Progress_Status1 {
+    width: 56%;
+    margin-left: 20px;
+    background-color: white;
   }
 
-  ::-webkit-scrollbar {
-    width: 2px;
+  #myprogressBar1 {
+    width: 1%;
+    height: 4px;
+    margin-bottom: 9px;
+    text-align: center;
+    color: black;
   }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
+}
+.images1 {
+  height: 90px;
+  width: 88px;
+  border-radius: 5px;
+}
+.vegNonVeg1 {
+  width: 11px;
+  height: 11px;
+  margin-left: 6px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
