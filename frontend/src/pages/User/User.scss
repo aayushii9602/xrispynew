@@ -2,7 +2,7 @@
   min-height: 100vh;
   .mainScreen {
     margin: auto;
-    background-color: rgb(245, 199, 199);
+    background-color: #eef1ff;
     width: 30%;
     min-width: 30%;
     max-width: 50%;
@@ -13,7 +13,7 @@
     .shopTitle {
       height: 6%;
       // max-height: 10%;
-      background-color: green;
+      background-color: #eef1ff;
 
       p {
         font-size: 20px;
@@ -32,7 +32,7 @@
     .filterSection {
       height: 6%;
       max-height: 10%;
-      background-color: red;
+      background-color: #b1b2ff;
       justify-content: space-between;
 
       .dropdown-btn {
@@ -101,7 +101,7 @@
     .progressBar {
       .container {
         text-align: center;
-        background-color: red;
+        background-color: #b1b2ff;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         p {

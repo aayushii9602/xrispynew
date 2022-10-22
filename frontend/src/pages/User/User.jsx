@@ -127,7 +127,9 @@ function User() {
                 <div className='shopRating'>Rating</div>
               </div>
               <div className='redirectingIcon'>
-                <img src={redirectIcon} alt='' />
+                <a href='UserMenu'>
+                  <img src={redirectIcon} alt='' />
+                </a>
               </div>
             </div>
             <hr className='horLine' />
@@ -150,7 +152,34 @@ function User() {
                 <div className='shopRating'>Rating</div>
               </div>
               <div className='redirectingIcon'>
-                <img src={redirectIcon} alt='' />
+                <a href='UserMenu'>
+                  <img src={redirectIcon} alt='' />
+                </a>
+              </div>
+            </div>
+            <hr className='horLine' />
+          </div>
+          <div>
+            <div className='shopContainer flex'>
+              <div className='shopImage'>
+                <img src={shopImg} alt='' />
+              </div>
+              <div className='shopDetail'>
+                <div className='Title'>
+                  <p>Momo's Corner</p>
+                </div>
+                <div className='shopContact'>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Reiciendis, et!nidewh
+                  </p>
+                </div>
+                <div className='shopRating'>Rating</div>
+              </div>
+              <div className='redirectingIcon'>
+                <a href='UserMenu'>
+                  <img src={redirectIcon} alt='' />
+                </a>
               </div>
             </div>
             <hr className='horLine' />
@@ -173,30 +202,9 @@ function User() {
                 <div className='shopRating'>Rating</div>
               </div>
               <div className='redirectingIcon'>
-                <img src={redirectIcon} alt='' />
-              </div>
-            </div>
-            <hr className='horLine' />
-          </div>
-          <div>
-            <div className='shopContainer flex'>
-              <div className='shopImage'>
-                <img src={shopImg} alt='' />
-              </div>
-              <div className='shopDetail'>
-                <div className='Title'>
-                  <p>Momo's Corner</p>
-                </div>
-                <div className='shopContact'>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Reiciendis, et!
-                  </p>
-                </div>
-                <div className='shopRating'>Rating</div>
-              </div>
-              <div className='redirectingIcon'>
-                <img src={redirectIcon} alt='' />
+                <a href='UserMenu'>
+                  <img src={redirectIcon} alt='' />
+                </a>
               </div>
             </div>
             <hr className='horLine' />
@@ -213,7 +221,7 @@ function User() {
               {' '}
               70%{' '}
             </progress>
-            <p>Hello I am a qwertyuiop</p>
+            <p>You are just a click away from your Favorite Dish</p>
           </div>
         </div>
       </div>
