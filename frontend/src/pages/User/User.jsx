@@ -89,7 +89,7 @@ function User() {
                 <div className='shopContact'>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Reiciendis, et!
+                    Reiciendis, et!nidewh
                   </p>
                 </div>
                 <div className='shopRating'>Rating</div>
