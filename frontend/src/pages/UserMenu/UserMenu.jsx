@@ -2,11 +2,30 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ROUTES } from '../../routes/RouterConfig'
 import './UserMenu.scss'
-import food from './images/momos.png'
-import rupee from './images/rupees.png'
-import dropDown from './images/icons8-chevron-24.png'
-import searchicon from './images/icons8-search-30.png'
-const UserMenu = () => {
+import backImg from '../../assets/images/backBtn.png'
+import dropDown from '../../assets/images/dropDown.png'
+import shopImg from '../../assets/images/momos.png'
+import redirectIcon from '../../assets/images/redirectIcon.png'
+import { useState } from 'react'
+import Dropdown from 'react-bootstrap/Dropdown';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import filterImg from './images/filter.png'
+import type from './images/search.png'
+import toggleBtn from './images/toggle.png'
+
+function User() {
+  const [dropdownState, setDropdownState] = useState(false)
+
+  const [searchVal, setSearchVal] = React.useState('')
+
+  const handleInput = (e) => {
+    setSearchVal(e.target.value)
+  }
+
+  const handleClearBtn = () => {
+    setSearchVal('')
+  }
+
   const navigate = useNavigate()
 
   const changeDir = (dir) => {
@@ -14,201 +33,202 @@ const UserMenu = () => {
   }
 
   return (
-    <div className='base1'>
-      <div className='UserMenu1'>
-        <div className='Title1'>FOODZVILLA</div>
-        <nav className='Navbar1'>
-          <div className='sort1'>
-            <div className='SortBy1'>Sort By</div>
-          </div>
-          {/* <div className='SearchSection'>
-            <img className='searchIcon' src={searchicon} alt='' />
-          </div> */}
-          <input
-            type='text'
-            placeholder='Search..'
-            className='searchText1'
-            id=''
-          />
-        </nav>
-        <div className='offer1'>
-          <div className='nameAndStars1'>
-            <div className='shopName1'>Momo's Corner</div>
-            <div className='Stars1'>
-              &#9733; &#9733; &#9733; &#9733; &#9734;{' '}
-            </div>
-          </div>
+    <div className='userContainer'>
+      <div className='min-h-screen items-center mainScreen'>
+        <div className='backBtn'>
+          <img className='ml-auto' src={backImg} alt='' />
+        </div>
+        <div className='shopTitle items-center'>
+          <p>Foodzvilla</p>
+        </div>
+        <div className='topPart'>
 
-          <div className='contactAndBtn1'>
-            <div className='Contact1'>
-              +919876543210
-              <br />
-              xyz@gmail.com
-            </div>
-            <button className='todaysSpecial1'>Today's Special</button>
+        <div className='headerPart flex items-center '>
+          <div className='searchBar'>
+             <input type="text" placeholder='search'/>
+          </div>
+          <div className='filter'>
+            <img className='filterImg' src={filterImg} alt=""/>
           </div>
         </div>
-        <hr />
-        <div className='itemsInMenu1'>
-          <div className='vegNonVeg1'>
-            <img
-              src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/1200px-Veg_symbol.svg.png'
-              alt=''
-            />
-          </div>
 
-          <div className='items1'>
-            <div className='imgAndName1'>
-              <img src={food} alt='Mountain' className='images1'></img>
-              <div className='itemDetails1'>
-                <div className='itemName1'>Corn & Cheese Pan Tossed Momo</div>
-                <div className='descriptionPrice1'>
-                  <div className='description1'>
-                    Delightful parcels of happiness packet
-                    <a className='readmore1' href='#'>
-                      ..read more
-                    </a>
-                  </div>
-                  <div className='price1'>
-                    <img src={rupee} alt='' /> 199
-                  </div>
+        <div className='categoryPart flex'>
+            <div className='categoryContainer'>
+              <div className='categoryImg'>
+                <img src={shopImg} alt="" />
+              </div>
+              <div className='categoryName'>
+                abc
+              </div>
+            </div>
+            <div className='categoryContainer'>
+              <div className='categoryImg'>
+                <img src={shopImg} alt="" />
+              </div>
+              <div className='categoryName'>
+                xyz
+              </div>
+            </div>
+            <div className='categoryContainer'>
+              <div className='categoryImg'>
+                <img src={shopImg} alt="" />
+              </div>
+              <div className='categoryName'>
+                mno
+              </div>
+            </div>
+            <div className='categoryContainer'>
+              <div className='categoryImg'>
+                <img src={shopImg} alt="" />
+              </div>
+              <div className='categoryName'>
+                pqr
+              </div>
+            </div>
+            <div className='categoryContainer'>
+              <div className='categoryImg'>
+                <img src={shopImg} alt="" />
+              </div>
+              <div className='categoryName'>
+                pqr
+              </div>
+            </div>
+            <div className='categoryContainer'>
+              <div className='categoryImg'>
+                <img src={shopImg} alt="" />
+              </div>
+              <div className='categoryName'>
+                pqr
+              </div>
+            </div>
+        </div>
+
+        <div className='toggle'>
+          <img className='toggleBtn' src={toggleBtn} alt=""/>
+        </div>
+
+        </div>
+
+        <div className='userBody'>
+          <div>
+            <div className='shopContainer flex'>
+              <div className='typeImg'>
+                <img src={type} alt=""/>
+              </div>
+              <div className='shopDetail'>
+                <div className='Title'>
+                  <p>Title</p>
+                </div>
+                <div className='shopContact'>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur
+                  </p>
+                </div>
+              </div>
+              <div className='price'>
+                <div className='priceVal'>
+                  Rs.100
                 </div>
               </div>
             </div>
           </div>
-          <hr />
-          <div className='vegNonVeg1'>
-            <img
-              src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/1200px-Veg_symbol.svg.png'
-              alt=''
-            />
-          </div>
-
-          <div className='items1'>
-            <div className='imgAndName1'>
-              <img src={food} alt='Mountain' className='images1'></img>
-              <div className='itemDetails1'>
-                <div className='itemName1'>Corn & Cheese Pan Tossed Momo</div>
-                <div className='descriptionPrice1'>
-                  <div className='description1'>
-                    Delightful parcels of happiness packed{' '}
-                    <a className='readmore1' href='#'>
-                      ..read more
-                    </a>
-                  </div>
-                  <div className='price1'>
-                    {' '}
-                    <img src={rupee} alt='' />
-                    199
-                  </div>
+          <div>
+            <div className='shopContainer flex'>
+              <div className='typeImg'>
+                <img src={type} alt=""/>
+              </div>
+              <div className='shopDetail'>
+                <div className='Title'>
+                  <p>Title</p>
+                </div>
+                <div className='shopContact'>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur
+                  </p>
+                </div>
+              </div>
+              <div className='price'>
+                <div className='priceVal'>
+                  Rs.100
                 </div>
               </div>
             </div>
           </div>
-          <hr />
-
-          <div className='vegNonVeg1'>
-            <img
-              src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Non_veg_symbol.svg/180px-Non_veg_symbol.svg.png'
-              alt=''
-            />
-          </div>
-
-          <div className='items1'>
-            <div className='imgAndName1'>
-              <img src={food} alt='Mountain' className='images1'></img>
-              <div className='itemDetails1'>
-                <div className='itemName1'>
-                  Chicken Peri Peri Pan Tossed Momo
+          <div>
+            <div className='shopContainer flex'>
+              <div className='typeImg'>
+                <img src={type} alt=""/>
+              </div>
+              <div className='shopDetail'>
+                <div className='Title'>
+                  <p>Title</p>
                 </div>
-                <div className='descriptionPrice1'>
-                  <div className='description1'>
-                    Delightful parcels of happiness packed{' '}
-                    <a className='readmore1' href='#'>
-                      ..read more
-                    </a>
-                  </div>
-                  <div className='price1'>
-                    {' '}
-                    <img src={rupee} alt='' />
-                    199
-                  </div>
+                <div className='shopContact'>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur
+                  </p>
+                </div>
+              </div>
+              <div className='price'>
+                <div className='priceVal'>
+                  Rs.100
                 </div>
               </div>
             </div>
           </div>
-          <hr />
-          <div className='vegNonVeg1'>
-            <img
-              src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/1200px-Veg_symbol.svg.png'
-              alt=''
-            />
-          </div>
-
-          <div className='items1'>
-            <div className='imgAndName1'>
-              <img src={food} alt='Mountain' className='images1'></img>
-              <div className='itemDetails1'>
-                <div className='itemName1'>Corn & Cheese Pan Tossed Momo</div>
-                <div className='descriptionPrice1'>
-                  <div className='description1'>
-                    Delightful parcels of happiness packed
-                    <a className='readmore1' href='#'>
-                      ..read more
-                    </a>
-                  </div>
-                  <div className='price1'>
-                    {' '}
-                    <img src={rupee} alt='' />
-                    199
-                  </div>
+          <div>
+            <div className='shopContainer flex'>
+              <div className='typeImg'>
+                <img src={type} alt=""/>
+              </div>
+              <div className='shopDetail'>
+                <div className='Title'>
+                  <p>Title</p>
+                </div>
+                <div className='shopContact'>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur
+                  </p>
+                </div>
+              </div>
+              <div className='price'>
+                <div className='priceVal'>
+                  Rs.100
                 </div>
               </div>
             </div>
           </div>
-          <hr />
-          <div className='vegNonVeg1'>
-            <img
-              src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/1200px-Veg_symbol.svg.png'
-              alt=''
-            />
-          </div>
-
-          <div className='items1'>
-            <div className='imgAndName1'>
-              <img src={food} alt='Mountain' className='images1'></img>
-              <div className='itemDetails1'>
-                <div className='itemName1'>Corn & Cheese Pan Tossed Momo</div>
-                <div className='descriptionPrice1'>
-                  <div className='description1'>
-                    Delightful parcels of happiness packed{' '}
-                    <a className='readmore1' href='#'>
-                      ..read more
-                    </a>
-                  </div>
-                  <div className='price1'>
-                    {' '}
-                    <img src={rupee} alt='' />
-                    199
-                  </div>
+          <div>
+            <div className='shopContainer flex'>
+              <div className='typeImg'>
+                <img src={type} alt=""/>
+              </div>
+              <div className='shopDetail'>
+                <div className='Title'>
+                  <p>Title</p>
+                </div>
+                <div className='shopContact'>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur
+                  </p>
+                </div>
+              </div>
+              <div className='price'>
+                <div className='priceVal'>
+                  Rs.100
                 </div>
               </div>
             </div>
           </div>
-          <hr />
-          <div className='Footer1'>
-            <div id='Progress_Status1'>
-              <div id='myprogressBar1'></div>
-            </div>
-            <footer>
-              <div className='text1'>
-                Your Menu is Here, Choose Your Food Which Suits Your Mood !
-              </div>
-            </footer>
+        </div>
+        <div className='progressBar'>
+          <div className='container'>
+            <p>Footer</p>
           </div>
         </div>
       </div>
     </div>
   )
 }
-export default UserMenu
+
+export default User

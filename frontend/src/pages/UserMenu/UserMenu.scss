@@ -1,197 +1,181 @@
-.base1 {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.UserMenu1 {
-  margin-top: 20px;
-  margin: 20px;
-  background: #f5f5f5;
-  max-width: 360px;
-  margin-left: 50px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 11px;
-  line-height: 16px;
-  background-color: #eef1ff;
-  margin-bottom: 20px;
+.userContainer {
+  min-height: 100vh !important;
 
-  .itemsInMenu1 {
-    max-height: 80vh;
-    overflow: scroll;
-    // overflow-x: hidden;
-  }
-}
-.Title1 {
-  padding-bottom: 9px;
-  padding-top: 9px;
-  margin-left: 150px;
-  position: sticky;
-}
-.Navbar1 {
-  display: flex;
-  position: sticky;
-  padding-bottom: 9px;
-  padding-top: 9px;
-  background: #b1b2ff;
-  border-radius: 0px;
-  width: 360px;
-  height: 39px;
-  margin-right: 17px;
-}
-.sort1 {
-  display: flex;
-  background: #eef1ff;
-  border: 1px solid #eef1ff;
-  border-radius: 5px;
-  width: 74px;
-  margin-left: 15px;
-  height: 3.3vh;
-  padding: 0px 4px;
-  .SortBy1 {
-    margin-left: 7px;
-  }
-  .Drop1 {
-    margin-bottom: 10px;
-  }
-  .dropDown1 {
-    height: 7px;
-    width: 7px;
-    margin-top: 20px;
-    color: black;
-  }
-}
-.searchText1 {
-  position: absolute;
-  vertical-align: middle;
-  background: #eef1ff;
-  border: 1px solid #eef1ff;
-  border-radius: 5px;
-  padding-right: 40px;
-  padding-left: 2px;
-  width: 119px;
-  margin-left: 224px;
-}
+  .mainScreen {
+    margin: auto;
+    background-color: #F9F1F1;
+    width: 30%;
+    min-width: 30%;
+    max-width: 50%;
+    height: 100vh;
+    max-height: 100vh;
+    z-index: -1;
 
-.offer1 {
-  margin-left: 20px;
-  margin-top: 19px;
-  margin-bottom: 18px;
-  width: 323px;
-  height: 75px;
-  background: #eeeeee;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  .nameAndStars1 {
-    display: flex;
-    .shopName1 {
-      margin-left: 10px;
-      margin-top: 3px;
-    }
-    .Stars1 {
-      margin-left: 154px;
-      margin-top: 3px;
-      font-size: larger;
-    }
-  }
+    .shopTitle {
+      height: 10%;
+      // max-height: 10%;
+      background-color: #FFA801;
 
-  .contactAndBtn1 {
-    display: flex;
-    margin-left: 10px;
-    margin-top: 10px;
-    .todaysSpecial1 {
-      position: relative;
-      margin-left: 150px;
-      margin-top: 10px;
-      background: #b1b2ff;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.17);
-      padding: 0px 4px;
-      border-radius: 5px;
-    }
-  }
-}
-.items1 {
-  .imgAndName1 {
-    display: flex;
-  }
-
-  margin-left: 20px;
-  margin-bottom: 23px;
-
-  .itemDetails1 {
-    font-size: medium;
-    margin-left: 15px;
-    margin-right: 17px;
-    width: 190px;
-    .itemName1 {
-      font-weight: 600;
-    }
-  }
-  .descriptionPrice1 {
-    margin-top: 8px;
-    display: flex;
-    font-size: small;
-    .description1 {
-      margin-right: 20px;
-      .readmore1 {
-        font-weight: bold;
+      p {
+        font-size: 20px;
+        padding-top: 0.4rem;
+        text-align: center;
       }
     }
-    .price1 {
-      margin-left: 26px;
-      display: flex;
-      img {
-        width: 15px;
-        height: 15px;
+
+    .topPart {
+      
+      .headerPart {
+        position: absolute;
+        right: 38rem;
+        top: 6rem;
+
+        .searchBar {
+          padding-right: 2rem;
+        }
+
+        .filter {
+
+          // padding-right: 1rem;
+          .filterImg {
+            width: 30px;
+          }
+        }
+      }
+
+      .categoryPart {
+        position: absolute;
+        top: 7rem;
+        text-align: center;
+        left: 31.8rem;
+        width: 420px;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        .categoryContainer {
+          padding-top: 2rem;
+          padding-left: 1.4rem;
+          padding-right: 0rem;
+
+
+          .categoryImg {
+            width: 80px;
+          }
+
+          .categoryName {
+            background-color: rgba(255, 168, 1, 0.5);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 4.56rem;
+          }
+        }
+      }
+
+      .toggle {
+        position: absolute;
+        top: 16.7rem;
+        left: 33.3rem;
+
+        .toggleBtn {
+          width: 40px;
+        }
+      }
+    }
+
+    .backBtn {
+      position: absolute;
+      z-index: 1;
+      top: 2%;
+      padding-left: 1%;
+    }
+
+    .filterSection {
+      height: 6%;
+      max-height: 10%;
+      background-color: red;
+      justify-content: space-between;
+
+      .dropDown {
+        margin-top: 0.3rem;
+        margin-left: 0.8rem;
+      }
+
+      .search-bar {
+        margin-right: 1rem;
+        margin-top: 0.7rem;
+
+      }
+    }
+
+    .userBody {
+      display: block;
+      padding-top: 12rem;
+      margin-top: 1.1rem;
+      
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+
+      max-height: 80vh;
+      overflow: scroll;
+
+      .shopContainer {
+        margin: 2rem;
+        padding: 1.2rem;
+        background-color: #fff;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+
+        .shopDetail {
+          position: relative;
+
+          .Title {
+            // padding: 0.3rem;
+          }
+
+          .shopContact {
+            // padding: 0.2rem;
+          }
+        }
+
+        .price {
+          text-align: center;
+
+          .priceVal {
+            padding: 4px;
+            background-color: rgba(255, 168, 1, 0.5);
+            border-radius: 5px;
+          }
+        }
+
+        .redirectingIcon {
+          display: block;
+          justify-content: center;
+          margin-top: 3.8rem;
+          margin-left: 0.2rem;
+        }
+      }
+    }
+
+    .progressBar {
+      .container {
+        text-align: center;
+        background-color: #FFA801;
+        padding-top: 10px;
+        margin-top: 0.7rem;
+
+        p {
+          padding: 1rem;
+          padding-top: 0;
+        }
       }
     }
   }
-}
-.Footer1 {
-  position: fixed;
-  left: 30;
-  bottom: 0;
-  width: 360px;
-  height: 40px;
-  background: #b1b2ff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 5px 5px 5px 5px;
-  color: white;
-  .text1 {
-    margin-left: 20px;
-    font-size: 12px;
-  }
-  #Progress_Status1 {
-    width: 56%;
-    margin-left: 20px;
-    background-color: white;
-  }
-
-  #myprogressBar1 {
-    width: 1%;
-    height: 4px;
-    margin-bottom: 9px;
-    text-align: center;
-    color: black;
-  }
-}
-.images1 {
-  height: 90px;
-  width: 88px;
-  border-radius: 5px;
-}
-.vegNonVeg1 {
-  width: 11px;
-  height: 11px;
-  margin-left: 6px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-::-webkit-scrollbar {
-  width: 2px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
 }
